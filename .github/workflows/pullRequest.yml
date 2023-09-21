@@ -1,0 +1,14 @@
+name: test
+
+on: 
+  pull_request:
+    types: 
+      - open
+
+jobs:
+  curl_test:
+    runs-on: ubuntu-latest 
+    steps:
+    - name: test
+      run: |
+        echo "hello world"
