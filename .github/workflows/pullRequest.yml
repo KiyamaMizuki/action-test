@@ -13,4 +13,4 @@ jobs:
       run: |
         echo "hello world"
         echo ${{github.event.pull_request }}
-        echo ${{github.event.pull_request.opened}}
+        echo ${{github.event.action}}
