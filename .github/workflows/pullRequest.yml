@@ -2,8 +2,6 @@ name: test
 
 on: 
   pull_request:
-    types: 
-      - open
 
 jobs:
   curl_test:
@@ -12,3 +10,7 @@ jobs:
     - name: test
       run: |
         echo "hello world"
+        echo ${{github.event.pull_request }}
+        echo ${{github.event.action}}
+        echo ${{github.event}}
+        echo ${{github}}
