@@ -13,3 +13,4 @@ jobs:
         echo ${{github.event.pull_request }}
         echo ${{github.event.action}}
         echo ${{github.event}}
+        echo ${{github}}
